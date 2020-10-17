@@ -1,4 +1,4 @@
-// Defining all planner time elements
+// Defining buttons, time display, time format, current time.
 var saveBtn = $("#saveBtn")
 var scheduleTest = $("#scheduledTest")
 var timeCheck = moment().format("H")
@@ -12,7 +12,7 @@ var savedTimes = JSON.parse(localStorage.getItem("scheduleText")) || {}
 
 
 
-// Indicate if the time slot has passed IS SAME moment.js, color code and addClass past present or future
+// Indicate if the time slot has passed, is else statement for past present or future
 function hourSlot(element, time) {
     if (time == timeCheck) {
         element.addClass("present");
@@ -22,6 +22,7 @@ function hourSlot(element, time) {
 
 }
 
+// for loop for the index of time 9-17
 for (let index = 9; index < 18; index++) {
     const time = index;
     var element = $("#" + time)
@@ -35,6 +36,7 @@ function addToScheduleText() {
 
 }
 
+// Save Button
 $(".saveBtn").on('click', saveScheduledEvent)
 
 var savedSchedule = $(this).parent().parent().find("textarea").val();
@@ -53,7 +55,7 @@ function saveScheduledEvent(event) {
 
 
 
-// saved item persists if page is refreshed
+// function for saving the item to remain on page if it is refreshed
 
 function getEvents() {
     for (const key in savedTimes) {

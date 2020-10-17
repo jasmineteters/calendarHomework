@@ -25,143 +25,143 @@
   </head>
 
   <body>
-    <header class="jumbotron text-white div-color">
+    <header class="jumbotron text-white">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p id="currentDay" class="lead">
     </header>
-    <div class="container container-fluid div-color">
+    <div class="container container-fluid">
       <!-- Timeblocks go here -->
 
       <!-- Titles for the day planner -->
  <div class="row justify-content-center text-white">
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom ">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block ">
         <h5>Time</h5>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block margin-custom ">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block ">
         <h5>Schedule</h5>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom ">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block ">
         <h5>Save</h5>
     </div>
   </div>
 
   <!-- Time block, this same layout repeats from the 9am block to the 5pm block -->
   <div class="row justify-content-center">
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom am9" id="9">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block am9" id="9">
         9:00 am
     </div>
     <!-- textarea to input scheduled event -->
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block margin-custom  textarea">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block  textarea">
         <div class="form-group">
             <textarea class="form-control textarea scheduledTest" id="9am" rows="1"></textarea>
         </div>
     </div>
     <!-- Save button to save to localstorage -->
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom save-style">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block save-style">
         <button class="far fa-save fa-2x saveBtn align-middle "></button>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom am10" id="10">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block am10" id="10">
         10:00 am
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block margin-custom custom-color-time textarea">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block custom-color-time textarea">
         <div class="form-group">
             <textarea class="form-control textarea" id="10am" rows="1"></textarea>
         </div>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom save-style">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block save-style">
         <button class="far fa-save fa-2x saveBtn align-middle"></button>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom am11" id="11">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block am11" id="11">
         11:00 am
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block margin-custom  ">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block  ">
         <div class="form-group">
             <textarea class="form-control textarea" id="11am" rows="1"></textarea>
         </div>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom save-style">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block save-style">
         <button class="far fa-save fa-2x saveBtn align-middle"></button>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom pm12" id="12">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block pm12" id="12">
         12:00 pm
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block margin-custom  textarea">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block  textarea">
         <div class="form-group">
             <textarea class="form-control textarea" id="12pm" rows="1"></textarea>
         </div>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom save-style">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block save-style">
         <button class="far fa-save fa-2x saveBtn align-middle"></button>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom time-tex pm1" id="13">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block time-tex pm1" id="13">
         1:00 pm
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block margin-custom  textarea">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block  textarea">
         <div class="form-group">
             <textarea class="form-control textarea" id="1pm" rows="1"></textarea>
         </div>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom save-style">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block save-style">
         <button class="far fa-save fa-2x saveBtn align-middle"></button>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom pm2" id="14">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block pm2" id="14">
         2:00 pm
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block margin-custom  textarea">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block  textarea">
         <div class="form-group">
             <textarea class="form-control textarea" id="2pm" rows="1"></textarea>
         </div>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom save-style">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block save-style">
         <button class="far fa-save fa-2x saveBtn align-middle"></button>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom pm3" id="15">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block pm3" id="15">
         3:00 pm
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block margin-custom  textarea">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block  textarea">
         <div class="form-group">
             <textarea class="form-control textarea" id="3pm" rows="1"></textarea>
         </div>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom save-style">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block save-style">
         <button class="far fa-save fa-2x saveBtn align-middle"></button>
     </div>
   </div>
     <div class="row justify-content-center">
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom pm4" id="16">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block pm4" id="16">
         4:00 pm
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block margin-custom  textarea">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block  textarea">
         <div class="form-group">
             <textarea class="form-control textarea" id="4pm" rows="1"></textarea>
         </div>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom save-style">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block save-style">
         <button class="far fa-save fa-2x saveBtn align-middle"></button>
     </div>
   </div>
     <div class="row justify-content-center">
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom pm5" id="17">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block pm5" id="17">
         5:00 pm
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block margin-custom  textarea">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 border time-block  textarea">
         <div class="form-group">
             <textarea class="form-control textarea" id="5pm" rows="1"></textarea>
         </div>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block margin-custom save-style">
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 border time-block save-style">
         <button class="far fa-save fa-2x saveBtn align-middle"></button>
     </div>
   </div>
